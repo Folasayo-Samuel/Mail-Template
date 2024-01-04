@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://raw.githubusercontent.com/Folasayo-Samuel/Plugbay-Template-Styles/main/styles.css"
+    />
+    <title>User Signup</title>
+    <style>
+      /* .content {
+        border: 2px solid red;
+      } */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #container {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-between; */
+        display: block;
+        /* align-items: s; */
+        /* border: 2px solid blue; */
+
+        height: 100vh;
+      }
+
+      .content {
+        color: #333;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 30px;
+      }
+
+      .user-name {
+        color: #333;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 30px;
+      }
+
+      .horizontal-line {
+        height: 1px;
+        background: #d9d9d9;
+        width: 100%;
+        /* margin: 20px 0; */
+      }
+
+      .playstore-apple-icons {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .apple-icons {
+        width: 180px;
+        height: 39px;
+      }
+
+      .google-play-icon {
+        margin-top: -19px;
+        height: 81px;
+        width: 180px;
+      }
+
+      .sub-footer {
+        color: #333;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .footer-list {
+        color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      li a {
+        color: rgba(0, 0, 0, 0.7);
+        margin-right: 13px;
+      }
+
+      /* Media query for tablets and smaller screens */
+      @media (max-width: 768px) {
+        #container {
+          padding: 10px;
+          height: 100%;
+        }
+
+        .playstore-apple-icons {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .apple-icons {
+          width: 100px;
+          height: 30px;
+          margin-bottom: 10px;
+        }
+        .google-play-icon {
+          width: 100px;
+          height: 60px;
+          margin-bottom: 10px;
+        }
+        footer {
+          margin-bottom: 0 !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="content">
+        <header>
+          <img style="width: 135px; height: 45px;" class="logo" src="https://res.cloudinary.com/dyacfa943/image/upload/v1698663748/Plugbay_logo_imknem.png" alt="logo" />
+        </header>
+        <p class="user-name">Dear <%= userName %>,</p>
+        <p>
+          Welcome to Plugbay! 🚀- the vibrant community where local connections
+          flourish, and opportunities abound! We're thrilled to have you on
+          board as part of our growing family.
+        </p>
+        <p>
+          At Plugbay, we believe in the power of connecting individuals with
+          local businesses to create a thriving community. Whether you're
+          looking for the latest offerings from your favorite local spots or
+          eager to explore new opportunities, Plugbay is your go-to platform.
+        </p>
+        <div>What Plugbay Has to Offer:</div>
+
+        <div>
+          - Discover Local Businesses: Explore a diverse range of businesses in
+          your area, from cozy cafes to innovative startups.
+        </div>
+
+        <div>
+          - Stay Informed: Receive updates on promotions, events, and new
+          listings from your subscribed businesses.
+        </div>
+        <div>
+          - Connect with Your Community: Engage with like-minded individuals and
+          stay connected to the heartbeat of your locality.
+        </div>
+
+        <p>
+         <div>Ready to Take It to the Next Level? </div> If you own a business, why not
+          showcase it to our dynamic community? Let others discover the unique
+          offerings you bring to the table. Click here to add your business to
+          Plugbay and unlock new opportunities.
+        </p>
+        <p style="margin-bottom: 20px;">We're excited about the journey ahead and look forward to being a part of your local experiences on Plugbay.</p>
+        <p><b>Best regards,</b></p>
+        <p><b>The Plugbay Team.</b></p>
+      </div>
+
+      <div>
+        <div class="horizontal-line"></div>
+        <!-- <div > -->
+            &nbsp;
+            <ul class="playstore-apple-icons">
+              <li>
+                <a href="https://plugbay.com">
+                  <img
+                    class="apple-icons"
+                    src="https://res.cloudinary.com/dyacfa943/image/upload/v1703082289/apple-store-icon_sacq8y.png"
+                    alt="apple store icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://plugbay.com">
+                  <img
+                    class="google-play-icon"
+                    src="https://res.cloudinary.com/dyacfa943/image/upload/v1703082262/google-play-icon_l0y1np.png"
+                    alt="google play icon"
+                  />
+                </a>
+              </li>
+            </ul>
+            <!-- </div> -->
+            <div class="horizontal-line"></div>
+            <p class="sub-footer">&copy; 2023 Plugbay. All rights reserved.</p>
+            <footer>
+              <ul class="footer-list">
+                <li>
+                  <a href="https://starfish-app-t3xdy.ondigitalocean.app/en/privacy">Privacy policy</a>
+                </li>
+                <li>
+                  <a href="http://">Terms of service</a>
+                </li>
+                <li>
+                  <a href="http://">Help center</a>
+                </li>
+                <li>
+                  <a href="http://">Unsubscribe</a>
+                </li>
+              </ul>
+            </footer> 
+          </div>
+        </div>
+      </body>
+    </html>
+     
